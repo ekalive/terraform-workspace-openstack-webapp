@@ -21,6 +21,5 @@ module "mylabapp" {
   app_environment   = var.app_environment
   app_network       = data.terraform_remote_state.tenant_workspace.outputs.network_name
   ext_net_name      = "public"
-  number_of_servers = 2
   subnet_resource   = data.terraform_remote_state.tenant_workspace.outputs.subnet_resource
 }
